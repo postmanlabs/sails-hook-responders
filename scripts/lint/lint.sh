@@ -29,9 +29,9 @@ jshint -v;
 echo -e "jscs v`jscs --version`\033[0m\n";
 
 # run style checker
-jscs index.js responses;
+jscs index.js responses test;
 
 # run static linter
 echo;
-jshint index.js responses;
+jshint index.js responses test;
 echo -en "No lint errors found.\n";
