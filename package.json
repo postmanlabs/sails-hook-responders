@@ -3,10 +3,11 @@
   "description": "Sails hook for response policies, or responders",
   "author": "Postman Labs <help@getpostman.com>",
   "contributors": [
-    "Akshay Bist <akshay@getpostman.com>"
+    "Akshay Bist <akshay@getpostman.com>",
+    "Shamasis Bhattacharya <shamasis@getpostman.com>"
   ],
   "license": "Apache-2.0",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/postmanlabs/sails-hook-responders.git"
