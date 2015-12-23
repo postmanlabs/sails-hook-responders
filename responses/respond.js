@@ -40,7 +40,7 @@ module.exports = function respond (data, options, done) {
    * @type {Function}
    */
   done = (util.isFunction(data) && data) || (util.isFunction(options) && options) || (util.isFunction(done) && done) ||
-    function respondCallback (err, req, res, data) {
+    function respondCallback (err, req, res, data, options) {
       if (err) { sails.log.error(err); }
 
       /**
@@ -72,6 +72,6 @@ module.exports = function respond (data, options, done) {
      * Ensure that the data object is available to the final callback
      */
     function (err) {
-      return done(err, req, res, data);
+      return done(err, req, res, data, options);
     });
 };
