@@ -97,7 +97,7 @@ module.exports = {
       };
 
     // You can pass a custom callback to `res.respond`, which will be called after the responders have been run
-    return res.respond(data, function (err, req, res, data) {
+    return res.respond(data, function (err, req, res, data, options) {
       return res.view('user/goodbye', data);
     });
   },
